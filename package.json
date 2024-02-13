@@ -2,10 +2,10 @@
     "name": "static_site_server",
     "version": "1.0.0",
     "description": "This is just a simple static site server built in pure NodeJS without using any frameworks. This is just a fun project to test the capabilities of NodeJS without any of its frameworks.",
-    "main": "server.js",
+    "main": "index.js",
     "scripts": {
-        "start": "node server.js",
-        "server": "nodemon server.js"
+        "start": "node index.js",
+        "server": "nodemon index.js"
     },
     "repository": {
         "type": "git",
