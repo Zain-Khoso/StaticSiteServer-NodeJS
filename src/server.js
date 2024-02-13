@@ -17,6 +17,15 @@ const server = function (request, response) {
         const data = fs.readFileSync(filePath, "utf8");
 
         response.end(data.toString());
+    } else if (request.url === "/about") {
+        // Setting a success status code for our response.
+        response.statusCode = 200;
+
+        // Serving an HTML file.
+        const filePath = path.join("public", "about.html");
+        const data = fs.readFileSync(filePath, "utf8");
+
+        response.end(data.toString());
     } else {
         // Setting a 404 status code for our response.
         response.statusCode = 404;
